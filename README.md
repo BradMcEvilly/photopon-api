@@ -1,40 +1,35 @@
-# sinatra-rspec-bundler-template
+<pre>
+ _______ __          __                            _______ _______ ___ 
+|   _   |  |--.-----|  |_.-----.-----.-----.-----.|   _   |   _   |   |
+|.  1   |     |  _  |   _|  _  |  _  |  _  |     ||.  1   |.  1   |.  |
+|.  ____|__|__|_____|____|_____|   __|_____|__|__||.  _   |.  ____|.  |
+|:  |                          |__|               |:  |   |:  |   |:  |
+|::.|                              by stephan.com |::.|:. |::.|   |::.|
+`---'                                             `--- ---`---'   `---'
+</pre>
 
-## Update
+© Photopon, LLC
+================
+#### by stephan.com
 
-- removed Webrat
+This project implements the needed API for Photopon
 
-- updated everything to be compatible with newest gem versions and ruby 2.0
+References
+----------
 
-## Overview
+https://github.com/daddz/sinatra-rspec-bundler-template/
+https://github.com/modernistik/parse-stack-example
 
-- Modular Sinatra template
+Photopon API methods
+--------------------
 
-- RSpec2 support
+* qrcode
+  * company=
+  * location=
+  * download (optional)
+  * t= (nonce for cache, use unix time)
 
-- Bundler support
+Deployment
+----------
 
-- SimpleCov support
-
-- Works with Ruby 2.0
-
-## Usage
-
-- clone this repository
-
-- run `bundle install` (add other gems you may need to the Gemfile beforehand)
-
-- run `rake` or `rake help` to see available tasks
-
-- run `rake spec`
-
-- start building your project
-
-- modify your app routes in `config.ru`
-
-- `rackup config.ru` to start it
-
-## Thanks
-
-I looked at so many different examples from other people to hack this together.
-Thanks to everyone out there, especially the [Padrino](http://www.padrinorb.com) team, whose sources were very helpful when I built this.
+git push heroku master

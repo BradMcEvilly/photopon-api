@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe Foobar::Foo do
+describe Photopon::Welcome do
   
   def app
-    @app ||= Foobar::Foo
+    @app ||= Photopon::Welcome
   end
-
+  
   describe "GET '/'" do
     it "should be successful" do
       get '/'

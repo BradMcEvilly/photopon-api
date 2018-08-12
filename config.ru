@@ -4,6 +4,6 @@
 require File.expand_path("../config/boot.rb", __FILE__)
 
 run Rack::URLMap.new({
-  "/"    => Foobar::Foo,
-  "/bar" => Foobar::Bar
+  "/"    => Photopon::Welcome,
+  "/qrcode" => Photopon::QRCode
 })

@@ -1,3 +1,4 @@
+# class for helpers
 class Sinatra::Base
   helpers Sinatra::JSON
 

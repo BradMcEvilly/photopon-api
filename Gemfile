@@ -1,19 +1,21 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
+gem 'dotenv'
+gem 'foreman'
+gem 'heroku'
 gem 'rake'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'foreman'
-gem 'dotenv'
 
 gem 'parse-stack'
+gem 'rqrcode_png'
 
 group :test do
+    gem 'factory_girl'
     gem 'rspec'
     gem 'rack-test', :require => "rack/test"
     gem 'simplecov', :require => false
-    gem 'factory_girl'
 end
 
 group :development do

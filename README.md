@@ -17,8 +17,8 @@ This project implements the needed API for Photopon
 References
 ----------
 
-https://github.com/daddz/sinatra-rspec-bundler-template/
-https://github.com/modernistik/parse-stack-example
+* https://github.com/daddz/sinatra-rspec-bundler-template/
+* https://github.com/modernistik/parse-stack-example
 
 Photopon API methods
 --------------------
@@ -28,8 +28,19 @@ Photopon API methods
   * location=
   * download (optional)
   * t= (nonce for cache, use unix time)
+  * size= (optional, forced minimum 128)
 
 Deployment
 ----------
 
 git push heroku master
+
+Development
+-----------
+
+* foreman start
+
+bonus: use rerun https://github.com/alexch/rerun
+* `gem install rerun`
+* install additional gems for your platform as recommended (rb-fsevent for OSX)
+* `rerun foreman start`

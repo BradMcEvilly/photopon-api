@@ -1,8 +1,10 @@
 #!/usr/bin/env rackup
 
-require File.expand_path('../config/boot.rb', __FILE__)
+ENV['RACK_ENV'] ||= 'development'
 
-run Rack::URLMap.new(
-  '/' => Photopon::Welcome,
-  '/qrcode' => Photopon::QRCode
-)
+require 'rubygems' unless defined?(Gem)
+require 'bundler/setup'
+Bundler.require(:default, ENV['RACK_ENV'].to_sym)
+require './qrcode.rb'
+
+run Sinatra::Application
